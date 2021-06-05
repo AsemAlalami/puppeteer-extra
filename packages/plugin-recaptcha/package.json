@@ -11,7 +11,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": "berstend/puppeteer-extra",
+  "repository": "AsemAlalami/puppeteer-extra",
   "homepage": "https://github.com/berstend/puppeteer-extra/tree/master/packages/plugin-recaptcha",
   "author": "berstend",
   "license": "MIT",
