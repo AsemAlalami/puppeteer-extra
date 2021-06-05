@@ -112,7 +112,9 @@ export class RecaptchaContentScript {
       document.querySelectorAll<HTMLIFrameElement>(
         `iframe[src^='https://www.google.com/recaptcha/api2/anchor'][name^="a-"]` +
           ', ' +
-          `iframe[src^='https://www.google.com/recaptcha/enterprise/anchor'][name^="a-"]`
+          `iframe[src^='https://www.google.com/recaptcha/enterprise/anchor'][name^="a-"]` +
+          ', ' +
+          `iframe[src^='https://www.recaptcha.net/recaptcha/api2/anchor'][name^="a-"]`
       )
     )
   }
@@ -124,7 +126,9 @@ export class RecaptchaContentScript {
         ', ' +
         `iframe[src^='https://www.google.com/recaptcha/enterprise/anchor'][name^="a-${
           id || ''
-        }"]`
+        }"]` +
+        ', ' +
+        `iframe[src^='https://www.recaptcha.net/recaptcha/api2/anchor'][name^="a-${id || ''}"]`
     )
   }
 
